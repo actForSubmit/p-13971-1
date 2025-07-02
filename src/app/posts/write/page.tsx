@@ -39,7 +39,7 @@ export default function Page() {
                 content: contentTextarea.value,
             }),
         }).then((data) => {
-            alert(data.message);
+            alert(data.msg);
             router.replace(`/posts/${data.id}`);
         });
     };
